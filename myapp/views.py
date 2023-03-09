@@ -33,7 +33,7 @@ class Dalle:
                 n=1,
             size="1024x1024"
             )
-        self.image_url = response['data'][0]['url']
+        self.image_url = response['data'][0]['url'].strip()
         print(self.image_url)
 
 
@@ -64,12 +64,12 @@ def callback(request):
                     user_message = event.message.text        
 
                                 
-                    reply_dalle_url = dalle.get_response(user_message)
+                    reply_dalle_url = dalle.get_response(user_message="beautiful Taiwanese girl")
 
                     line_bot_api.reply_message(
                         event.reply_token,
-                        TextSendMessage(text=str(reply_dalle_url))
-                        #ImageSendMessage(original_content_url=reply_dalle_url, preview_image_url=reply_dalle_url)
+                        #TextSendMessage(text=reply_dalle_url)
+                        ImageSendMessage(original_content_url=reply_dalle_url, preview_image_url=reply_dalle_url)
                         )
 
 
