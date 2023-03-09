@@ -67,8 +67,8 @@ def callback(request):
 
                     line_bot_api.reply_message(
                         event.reply_token,
-                        #TextSendMessage(text=reply_msg)
-                        ImageSendMessage(original_content_url=reply_dalle_url, preview_image_url=reply_dalle_url)
+                        TextSendMessage(text=reply_dalle_url)
+                        #ImageSendMessage(original_content_url=reply_dalle_url, preview_image_url=reply_dalle_url)
                         )
 
 
