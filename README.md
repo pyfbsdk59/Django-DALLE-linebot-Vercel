@@ -1,17 +1,15 @@
 # Django-DALLE-linebot-Vercel
-# 一個使用Django框架和DALLE，創造linebot的專案，快速建置於平台Vercel。
+# 一個使用Django框架和圖像生成AI DALLE，創造一個linebot的專案，快速建置於平台Vercel。
 
 
 <div align="center">
   <img src="demo/demo1.png" width="300"/>
 </div>
 
-<div align="center">
-  <img src="demo/demo2.png" width="300"/>
-</div>
 
-### [English](https://github.com/pyfbsdk59/Django-official-ChatGPT-linebot-Vercel/blob/main/README_en.md)
-### [日本語](https://github.com/pyfbsdk59/Django-official-ChatGPT-linebot-Vercel/blob/main/README_jp.md)
+
+### [English](https://github.com/pyfbsdk59/Django-DALLE-linebot-Vercel/blob/main/README_en.md)
+### [日本語](https://github.com/pyfbsdk59/Django-DALLE-linebot-Vercel/blob/main/README_jp.md)
 
 
 
