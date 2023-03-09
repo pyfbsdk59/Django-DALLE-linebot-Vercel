@@ -6,7 +6,13 @@
   <img src="demo/demo1.png" width="300"/>
 </div>
 
+<div align="center">
+  <img src="demo/demo2.png" width="300"/>
+</div>
 
+<div align="center">
+  <img src="demo/demo2.png" width="300"/>
+</div>
 
 ### [English](https://github.com/pyfbsdk59/Django-DALLE-linebot-Vercel/blob/main/README_en.md)
 ### [日本語](https://github.com/pyfbsdk59/Django-DALLE-linebot-Vercel/blob/main/README_jp.md)
