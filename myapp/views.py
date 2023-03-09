@@ -61,11 +61,11 @@ def callback(request):
             if isinstance(event, MessageEvent):
                 if isinstance(event.message, TextMessage):
             ##############
-                    user_message = event.message.text        
+                    #user_message = event.message.text        
 
                                 
                     #reply_dalle_url = dalle.get_response(user_message="beautiful Taiwanese girl")
-                    reply_dalle_url = dalle.get_response(user_message)
+                    reply_dalle_url = dalle.get_response(event.message.text)
 
                     line_bot_api.reply_message(
                         event.reply_token,
