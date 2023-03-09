@@ -64,7 +64,8 @@ def callback(request):
                     user_message = event.message.text        
 
                                 
-                    reply_dalle_url = dalle.get_response(user_message="beautiful Taiwanese girl")
+                    #reply_dalle_url = dalle.get_response(user_message="beautiful Taiwanese girl")
+                    reply_dalle_url = dalle.get_response(user_message)
 
                     line_bot_api.reply_message(
                         event.reply_token,
