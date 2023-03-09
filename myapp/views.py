@@ -4,7 +4,7 @@ from linebot import LineBotApi, WebhookParser, WebhookHandler
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
 from linebot.models import MessageEvent, TextMessage
 from linebot.models import TextSendMessage, ImageSendMessage
-import openai, os
+import os
 
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -26,8 +26,8 @@ class Dalle:
 
 
     def get_response(self, user_input):
-        #import openai
-        #openai.api_key = openai.api_key
+        import openai
+        openai.api_key = openai.api_key
         response = openai.Image.create(
             prompt = user_input,
                 n=1,
@@ -67,7 +67,7 @@ def callback(request):
 
                     line_bot_api.reply_message(
                         event.reply_token,
-                        TextSendMessage(text=reply_dalle_url)
+                        TextSendMessage(text=str(reply_dalle_url))
                         #ImageSendMessage(original_content_url=reply_dalle_url, preview_image_url=reply_dalle_url)
                         )
 
