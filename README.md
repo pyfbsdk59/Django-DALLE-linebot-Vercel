@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-  <img src="demo/demo2.png" width="300"/>
+  <img src="demo/demo3.png" width="300"/>
 </div>
 
 ### [English](https://github.com/pyfbsdk59/Django-DALLE-linebot-Vercel/blob/main/README_en.md)
